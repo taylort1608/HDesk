@@ -1,4 +1,5 @@
 using HDesk.API.Extensions;
+using HDesk.API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,7 @@ await app.ApplyMigrationsAsync();
 await app.SeedAdminAsync();
 
 // Configure the HTTP request pipeline.
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseCors();
 app.UseHttpsRedirection();
 app.UseAuthentication();

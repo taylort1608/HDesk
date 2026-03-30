@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="HDesk.API/HDesk.API.csproj" />
+  <Project Path="HDesk.Core/HDesk.Core.csproj" />
+  <Project Path="HDesk.Infrastructure/HDesk.Infrastructure.csproj" />
+</Solution>
